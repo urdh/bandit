@@ -7,5 +7,6 @@
 #include <bandit/reporters/info.h>
 #include <bandit/reporters/spec.h>
 #include <bandit/reporters/crash.h>
+#include <bandit/reporters/tap.h>
 
 #endif

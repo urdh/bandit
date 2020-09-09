@@ -70,6 +70,9 @@ namespace bandit {
     choices.reporters.add("xunit", [&](detail::controller_t& controller) {
       controller.set_reporter(new bandit::reporter::xunit(controller.get_formatter(), controller.get_report_timing()));
     });
+    choices.reporters.add("tap", [&](detail::controller_t& controller) {
+      controller.set_reporter(new bandit::reporter::tap());
+    });
     choices.reporters.add("info", [&](detail::controller_t& controller) {
       controller.set_reporter(new bandit::reporter::info(controller.get_formatter(), controller.get_colorizer(), controller.get_report_timing()));
     });
